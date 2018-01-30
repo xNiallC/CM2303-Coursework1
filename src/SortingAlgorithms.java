@@ -1,7 +1,5 @@
-import java.util.Arrays;
-
 public class SortingAlgorithms {
-    public static int[] insertionSort(int inputArray[], int inputSize) {
+    public int[] insertionSort(int inputArray[], int inputSize) {
         for(int i = 1; i < inputSize; i++) {
             int item = inputArray[i];
             int j = i - 1;
@@ -17,7 +15,7 @@ public class SortingAlgorithms {
         return inputArray;
     }
 
-    public static int[] countingSort(int inputArray[], int outputArray[], int maxValue) {
+    public int[] countingSort(int inputArray[], int outputArray[], int maxValue) {
         // Create counting array, where we store the count of each value in input array
         int countArray[] = new int[maxValue + 1];
 
